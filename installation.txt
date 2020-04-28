@@ -1,0 +1,10 @@
+1. Java must be installed on your system
+2. Node.js and npm must be installed on your system
+3. Install Visual Studio Code
+4. Initiaslise npm packages -> npm init 
+5. Install WebDriverIO in system -> npm install webdriverio --save-dev
+6. Install webdriver cli -> npm install @wdio/cli
+7. Config your wdio -> ./node_modules/.bin/wdio Config
+8. Install CHAI (it provides assertion libraries) -> npm install chai --save-dev
+9. Install CHAI WebDriverIO -> npm install chai-webdriverio --save-dev
+10. Install Local Runner -> npm install local-runner --save-dev
