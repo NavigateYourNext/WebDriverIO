@@ -18,7 +18,7 @@ exports.config = {
     //
     specs: [
         // by default path will be -> './test/specs/**/*.js'
-        './test/**/*.js'
+        './pagesTest/**/B*.js'
     ],
     // Patterns to exclude.
     exclude: [
