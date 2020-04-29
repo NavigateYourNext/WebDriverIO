@@ -18,6 +18,16 @@ class BlazePage
         });
     }
 
+    get mainHeader()
+    {
+        return $('h2.home_title');
+    }
+
+    get notPresentInViewportWindow()
+    {
+        return $("//a[text()='JMeter']");
+    }
+
     //Setter Method
     specificChildElement(index)
     {
