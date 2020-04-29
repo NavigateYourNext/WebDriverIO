@@ -22,6 +22,28 @@ class InternetPage
        return $(`form#checkboxes>input:nth-child(${index})`);
     }
 
+    get search()
+    {
+        return $('#target');
+    }
+
+    get resultLabel()
+    {
+        return $('#result');
+    }
+
+    getResultLabelText()
+    {   
+        this.resultLabel.waitForDisplayed();
+        return this.resultLabel.getText();
+    }
+
+    enterSearch(value)
+    {
+        this.search.waitForDisplayed();
+        this.search.setValue(value);
+    }
+
     clickOnCheckbox(index)
     {
         this.getCheckboxElement(index).waitForDisplayed();

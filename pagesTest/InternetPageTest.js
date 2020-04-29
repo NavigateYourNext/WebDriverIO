@@ -42,5 +42,19 @@ describe("Handling Checkboxes", function(){
 
     });
 
+    it("Press Keys Actions", function(){
+
+        browser.url("http://the-internet.herokuapp.com/key_presses");
+
+        internetPage.enterSearch("Tab");
+
+        const text = internetPage.getResultLabelText();
+
+        console.log(text);
+
+        assert.equal(text,"You entered: TAB");
+
+    });
+
 
 });
